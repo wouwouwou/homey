@@ -1,0 +1,33 @@
+{
+  "id": "Spellcraft",
+  "version": "1.0.0",
+  "name": {
+    "en": "Spellcraft!",
+    "nl": "Spellcraft!"
+  },
+  "description": {
+    "en": "This is an example app for Homey",
+    "nl": "Dit is een voorbeeld app voor Homey"
+  },
+  "author": {
+    "name": "Tim Hintzbergen",
+    "email": "t.a.h.hintzbergen@student.utwente.nl"
+  },
+  "dependencies": {
+    "socket.io": "^1.1.0"
+  },
+  "permissions": [],
+  "speech": [
+    {
+      "id": "spellcraft",
+      "importance": "0.7",
+      "synonyms": {
+        "en": ["spellcraft"],
+		"nl": ["spellcraft"]
+      }
+    }
+  ],
+  "flow": {
+    "triggers": []
+  }
+}
