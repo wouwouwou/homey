@@ -10,7 +10,9 @@ The application uses following commands to search on wikipedia for a basic expla
 play tic tac toe   -   This starts a new game of tic tac toe, using the following board:
 
 1 2 3
+
 4 5 6
+
 7 8 9
 
 
