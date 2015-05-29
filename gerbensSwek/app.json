@@ -1,6 +1,6 @@
 {
-  "id": "nl.gerbenmeijer.random",
-  "version": "1.3.3.7",
+  "id": "nl.gerbenmeijer.wiki",
+  "version": "0.0.2",
   "name": {
     "en": "Gerbens Test",
     "nl": "Gerbens Test"
@@ -19,23 +19,15 @@
   ],
   "speech": [
     {
-      "id": "generated6",
+      "id": "giveinfo",
       "importance": "1",
       "synonyms": {
         "en": [
-          "roll a d6"
-        ]
+          "give information about"        ]
       }
     }
   ],
   "flow": {
-    "triggers": [
-      {
-        "method": "generated6",
-        "title": {
-          "en": "generated6"
-        }
-      }
-    ]
+    "triggers": []
   }
 }
