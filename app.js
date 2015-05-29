@@ -35,6 +35,10 @@ function App(){
 	}
 
 	this.move = function(field) {
+		if (self.game == null) {
+			self.speak("You must construct additional pylons, or start a game first.");
+			return;
+		}
 		if (self.game.doMove(self.game.convertField(field).x, self.game.convertField(field).y, self.player)) {
 			self.speak("Affirmative");
 			self.player = (self.player == 1) ? 2 : 1;
