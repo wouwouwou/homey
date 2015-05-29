@@ -1,4 +1,4 @@
-# Homey
+# Tic Tac Topapp
 A combined wikipedia search and tic tac toe application.
 
 ## Our idea
