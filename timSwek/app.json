@@ -1,42 +1,44 @@
 {
-  "id": "Spellcraft!",
-  "version": "1.0.0",
+  "id": "nl.timhintzbergen.spellcraft",
+  "version": "1.0.3",
   "name": {
-    "en": "Spellcraft!",
-    "nl": "Spellcraft!"
+    "en": "Spellcraft",
+    "nl": "Gerbens Test"
   },
   "description": {
-    "en": "This is an example app for Homey",
-    "nl": "Dit is een voorbeeld app voor Homey"
+    "en": "A app for chances and virtual dice throwing",
+    "nl": "MAASKANTJE KUT!"
   },
   "author": {
     "name": "Tim Hintzbergen",
     "email": "t.a.h.hintzbergen@student.utwente.nl"
   },
-  "dependencies": {
-    "socket.io": "^1.1.0"
-  },
-  "permissions": [],
+  "dependencies": {},
+  "permissions": [
+    "homey:manager:speech-output"
+  ],
   "speech": [
     {
-      "id": "throw a d6",
-      "importance": "0.7",
+      "id": "throw d6",
+      "importance": "1",
       "synonyms": {
-        "en": ["throw d6"],
-		"nl": ["gooi d6"]
+        "en": [
+          "roll a d6",
+          "roll-d6",
+          "throw-d6",
+          "thow-a-d6"
+        ]
       }
-    },
-	{
-		"id": "trigger function",
-		"importance": "0.9",
-		"synonyms": {
-			"en": ["listening homey"],
-			"nl": ["listing to this"]
-		}
-	}
-	  
+    }
   ],
   "flow": {
-    "triggers": []
+    "triggers": [
+      {
+        "method": "throw d6",
+        "title": {
+          "en": "throw d6"
+        }
+      }
+    ]
   }
 }

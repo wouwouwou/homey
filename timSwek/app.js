@@ -18,7 +18,7 @@ App.prototype.init = function() {
 		Homey.manager('ledring').animate({
 		name: 'pulse'
 	});
-}
+};
 
 
 // Rolls a single die with of the type (sides) given
@@ -31,7 +31,7 @@ function rollDie(sides) {
 // Rolls multiple dice specified by amount and of type sides; Uses rollDie()
 function rollDice(sides, amount, log) {
 	speakAndLog("Rolling a virtual {0}d{1}".format(amount, sides), log); //TODO String formatting
-	
+
 	var rolls = [];
 	var total = 0;
 	while (amount-- > 0) {
@@ -49,16 +49,13 @@ App.prototype.speech = function( speech ) {
 	
 	// loop all triggers
 	speech.triggers.forEach(function(trigger) {
-		if (trigger.id == 'throw a d6') {
+		if (trigger.id == 'throw d6') {
 			rollDice(6, 1, log);
 			
 			
-			// Obviously, you would get the real weather here
-			// And in case you didn't know yet, __() is for translation
-			
-		} else if (trigger.id == 'throw a dSTRING FORMATTING') {
-			// ... etc.
+		} else if (trigger.id == '') {
+			// pass
 		}
 		
 	});
-}
+};
