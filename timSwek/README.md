@@ -1,2 +1,2 @@
-# MyApp
-this is my first homey app
+# Spellcraft
+Spellcraft is an app that uses the homey to throw virtual dice of all kind!

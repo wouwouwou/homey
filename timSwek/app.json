@@ -1,5 +1,5 @@
 {
-  "id": "Spellcraft",
+  "id": "Spellcraft!",
   "version": "1.0.0",
   "name": {
     "en": "Spellcraft!",
@@ -19,13 +19,22 @@
   "permissions": [],
   "speech": [
     {
-      "id": "spellcraft",
+      "id": "random dice",
       "importance": "0.7",
       "synonyms": {
-        "en": ["spellcraft"],
-		"nl": ["spellcraft"]
+        "en": ["random dice"],
+		"nl": ["random worpen"]
       }
-    }
+    },
+	{
+		"id": "d6",
+		"importance": "0.9",
+		"synonyms": {
+			"en": ["d6"],
+			"nl": ["d6"]
+		}
+	}
+	  
   ],
   "flow": {
     "triggers": []
