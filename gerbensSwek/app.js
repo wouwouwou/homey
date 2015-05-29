@@ -38,12 +38,18 @@ function getInformation(name){
 					if(extract != undefined){
 						speakAndLog("Some information about "+ name + ". \n" + extract.split("\n")[0], true);
 					} else {
-						speakAndLog(extract, true);
+						speakAndLog("Some information about "+ name + ". \n" + extract, true);
 					}
 				} else {
 					speakAndLog("No info found!", true);
-				}
-			}
+				}				
+				
+			} else {
+				speakAndLog("No info found!", true);
+			}			
+			
+		} else {
+			speakAndLog("No info found!", true);
 		}
 		
 	});
@@ -62,16 +68,11 @@ App.prototype.init = function(){
 
 App.prototype.speech = function( speech ) {
 		var log = true;
-		Homey.log(speech);
 	    speech.triggers.forEach(function(trigger){
         if( trigger.id == 'giveinfo' ) {
 			var transcript = speech.transcript;
 			getInformation(transcript.replace("give information about ", ""));
-			
-            // ...	
-        } else {
-			getInformation("Google");
-		}
+        } 
         
     });
 }

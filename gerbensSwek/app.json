@@ -1,13 +1,13 @@
 {
   "id": "nl.gerbenmeijer.wiki",
-  "version": "0.0.2",
+  "version": "1.0.0",
   "name": {
-    "en": "Gerbens Test",
-    "nl": "Gerbens Test"
+    "en": "Wikipedia search",
+    "nl": "Zoeken op Wikipedia"
   },
   "description": {
-    "en": "This does random stuff",
-    "nl": "MAASKANTJE KUT!"
+    "en": "This plugin uses the Wikipedia web api to process searches. Use the voice command \"give me information about ...\" to search.",
+    "nl": "Deze plugin gebruikt de Wikipedia web api om informatie bij een zoekopdracht te geven. Gebruik het commando \"give me information about ...\" om te zoeken"
   },
   "author": {
     "name": "Gerben Meijer",
