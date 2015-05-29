@@ -19,19 +19,19 @@
   "permissions": [],
   "speech": [
     {
-      "id": "random dice",
+      "id": "throw a d6",
       "importance": "0.7",
       "synonyms": {
-        "en": ["random dice"],
-		"nl": ["random worpen"]
+        "en": ["throw d6"],
+		"nl": ["gooi d6"]
       }
     },
 	{
-		"id": "throw a d6",
+		"id": "trigger function",
 		"importance": "0.9",
 		"synonyms": {
-			"en": ["d6"],
-			"nl": ["d6"]
+			"en": ["listening homey"],
+			"nl": ["listing to this"]
 		}
 	}
 	  
