@@ -43,7 +43,7 @@ function App(){
 			self.speak("Affirmative");
 			self.player = (self.player == 1) ? 2 : 1;
 		} else {
-			self.speak("Permission denied");
+			self.speak("I can't let you do that Dave!");
 		}
 		if (self.game.checkWin(1)) {
 			self.speak("X wins");
@@ -51,10 +51,21 @@ function App(){
 		} else if (self.game.checkWin(2)) {
 			self.speak("O wins");
 			self.game = null;
+		} else if (self.game.checkFull()) {
+			self.speak("Tie. Game over.");
+			self.game = null;
 		} else {
 			if (self.player == 1) {
+				Homey.manager('ledring').animate({
+					name: 'pulse',
+					color: 'red'
+				});
 				self.speak("X, go ahead!");
 			} else {
+				Homey.manager('ledring').animate({
+					name: 'pulse',
+					color: 'green'
+				});
 				self.speak("O, go ahead!");
 			}
 		}
@@ -62,6 +73,7 @@ function App(){
 
 	this.speak = function(text) {
 		Homey.log(text);
+		Homey.manager('speech-output').say(text);
 	}
 }
 
@@ -109,6 +121,16 @@ function Game() {
 		if (diagltrb) return true;
 		if (diagrtlb) return true;
 		return false;
+	}
+
+	this.checkFull = function() {
+		var f = self.field;
+		for (var y = 0; y < f.length; y++) {
+			for (var x = 0; x < f[y].length; x++) {
+				if (f[y][x] == 0) return false;
+			}
+		}
+		return true;
 	}
 }
 

@@ -15,7 +15,8 @@
   },
   "dependencies": {},
   "permissions": [
-    "homey:manager:speech-output"
+    "homey:manager:speech-output",
+    "homey:manager:ledring"
   ],
   "speech": [
     {
