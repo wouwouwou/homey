@@ -1,0 +1,41 @@
+{
+  "id": "nl.gerbenmeijer.test",
+  "version": "1.0.0",
+  "name": {
+    "en": "Test",
+    "nl": "Test"
+  },
+  "description": {
+    "en": "This is an example app for Homey",
+    "nl": "Dit is een voorbeeld app voor Homey"
+  },
+  "author": {
+    "name": "Gerben Meijer",
+    "email": "gerry2211@gmail.com"
+  },
+  "dependencies": {},
+  "permissions": [
+    "homey:manager:speech-output"
+  ],
+  "speech": [
+    {
+      "id": "count",
+      "importance": "1",
+      "synonyms": {
+        "en": [
+          "count"
+        ]
+      }
+    }
+  ],
+  "flow": {
+    "triggers": [
+      {
+        "method": "count",
+        "title": {
+          "en": "count"
+        }
+      }
+    ]
+  }
+}
