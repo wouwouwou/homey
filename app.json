@@ -1,5 +1,5 @@
 {
-  "id": "nl.gerbenmeijer.test",
+  "id": "nl.ricklubbers.tictactoe",
   "version": "1.0.0",
   "name": {
     "en": "Test",
@@ -10,8 +10,8 @@
     "nl": "Dit is een voorbeeld app voor Homey"
   },
   "author": {
-    "name": "Gerben Meijer",
-    "email": "gerry2211@gmail.com"
+    "name": "Rick Lubbers",
+    "email": "homey@ricklubbers.nl"
   },
   "dependencies": {},
   "permissions": [
@@ -19,23 +19,58 @@
   ],
   "speech": [
     {
-      "id": "count",
+      "id": "startTictactoe",
       "importance": "1",
       "synonyms": {
         "en": [
-          "count"
+          "start tic tac toe",
+          "play tic tac toe",
+          "start tictactoe",
+          "play tictactoe",
+          "start tic-tac-toe",
+          "play tic-tac-toe"
         ]
       }
+    }, {
+      "id": "moveOne",
+      "importance": "1",
+      "synonyms": { "en": ["move one"] }
+    }, {
+      "id": "moveTwo",
+      "importance": "1",
+      "synonyms": { "en": ["move two"] }
+    }, {
+      "id": "moveThree",
+      "importance": "1",
+      "synonyms": { "en": ["move three"] }
+    }, {
+      "id": "moveFour",
+      "importance": "1",
+      "synonyms": { "en": ["move four"] }
+    }, {
+      "id": "moveFive",
+      "importance": "1",
+      "synonyms": { "en": ["move five"] }
+    }, {
+      "id": "moveSix",
+      "importance": "1",
+      "synonyms": { "en": ["move six"] }
+    }, {
+      "id": "moveSeven",
+      "importance": "1",
+      "synonyms": { "en": ["move seven"] }
+    }, {
+      "id": "moveEight",
+      "importance": "1",
+      "synonyms": { "en": ["move eight"] }
+    }, {
+      "id": "moveNine",
+      "importance": "1",
+      "synonyms": { "en": ["move nine"] }
     }
   ],
   "flow": {
     "triggers": [
-      {
-        "method": "count",
-        "title": {
-          "en": "count"
-        }
-      }
     ]
   }
 }
