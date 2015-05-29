@@ -1,6 +1,9 @@
 # Homey
-This is our project for the Athom (Homey) Hackathon.
+This app does stuff!
 
 ## Our idea
 Well...
+
+## Hi App Store!
+Bass bass travel travel get on my level!
 
