@@ -1,0 +1,14 @@
+.popup-settings .ngdialog-content {
+	width: 600px;
+	height: 400;
+	position: relative;
+	padding: 1em;
+}
+
+.light .popup-settings .ngdialog-content {
+	background: #E6E9F0;
+}
+
+.dark .popup-settings .ngdialog-content {
+	background: #222830;
+}

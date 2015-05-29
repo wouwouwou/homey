@@ -1,0 +1,32 @@
+.popup-debug .ngdialog-content {
+	position: absolute;
+	left: 20px;
+	right: 20px;
+	top: 40px;
+	bottom: 20px;
+	width: auto;
+	background: transparent;
+}
+.popup-debug .ngdialog-content:before {
+	content: "";
+	position: absolute;
+	display: block;
+	top: -7px;
+	left: 205px;
+	border-bottom: 7px solid #323232;
+	border-left: 7px solid transparent;
+	border-right: 7px solid transparent;
+}
+
+.popup-debug iframe {
+	border: 0;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	border-radius: 3px;
+	overflow: hidden;
+}
