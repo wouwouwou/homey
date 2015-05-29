@@ -70,6 +70,7 @@ function Game() {
 	];
 
 	this.convertField = function(field) {
+		field -= 1;
 		return { 'x': field % 3, 'y': Math.floor(field / 3) };
 	}
 
