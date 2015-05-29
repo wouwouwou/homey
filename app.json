@@ -2,11 +2,11 @@
   "id": "nl.ricklubbers.tictactoe",
   "version": "1.0.0",
   "name": {
-    "en": "Test",
+    "en": "tictactopApp",
     "nl": "Test"
   },
   "description": {
-    "en": "This is an example app for Homey",
+    "en": "This app combines 3 functions:\ndicerolls, tictactoe and wikipedia searches",
     "nl": "Dit is een voorbeeld app voor Homey"
   },
   "author": {
@@ -21,7 +21,7 @@
   "speech": [
     {
       "id": "startTictactoe",
-      "importance": "1",
+      "importance": 1,
       "synonyms": {
         "en": [
           "start tic tac toe",
@@ -32,46 +32,99 @@
           "play tic-tac-toe"
         ]
       }
-    }, {
+    },
+    {
       "id": "moveOne",
-      "importance": "1",
-      "synonyms": { "en": ["move one"] }
-    }, {
+      "importance": 1,
+      "synonyms": {
+        "en": [
+          "move one"
+        ]
+      }
+    },
+    {
       "id": "moveTwo",
-      "importance": "1",
-      "synonyms": { "en": ["move two"] }
-    }, {
+      "importance": 1,
+      "synonyms": {
+        "en": [
+          "move two"
+        ]
+      }
+    },
+    {
       "id": "moveThree",
-      "importance": "1",
-      "synonyms": { "en": ["move three"] }
-    }, {
+      "importance": 1,
+      "synonyms": {
+        "en": [
+          "move three"
+        ]
+      }
+    },
+    {
       "id": "moveFour",
-      "importance": "1",
-      "synonyms": { "en": ["move four"] }
-    }, {
+      "importance": 1,
+      "synonyms": {
+        "en": [
+          "move four"
+        ]
+      }
+    },
+    {
       "id": "moveFive",
-      "importance": "1",
-      "synonyms": { "en": ["move five"] }
-    }, {
+      "importance": 1,
+      "synonyms": {
+        "en": [
+          "move five"
+        ]
+      }
+    },
+    {
       "id": "moveSix",
-      "importance": "1",
-      "synonyms": { "en": ["move six"] }
-    }, {
+      "importance": 1,
+      "synonyms": {
+        "en": [
+          "move six"
+        ]
+      }
+    },
+    {
       "id": "moveSeven",
-      "importance": "1",
-      "synonyms": { "en": ["move seven"] }
-    }, {
+      "importance": 1,
+      "synonyms": {
+        "en": [
+          "move seven"
+        ]
+      }
+    },
+    {
       "id": "moveEight",
-      "importance": "1",
-      "synonyms": { "en": ["move eight"] }
-    }, {
+      "importance": 1,
+      "synonyms": {
+        "en": [
+          "move eight"
+        ]
+      }
+    },
+    {
       "id": "moveNine",
-      "importance": "1",
-      "synonyms": { "en": ["move nine"] }
+      "importance": 1,
+      "synonyms": {
+        "en": [
+          "move nine"
+        ]
+      }
+    },
+    {
+      "id": "giveinfo",
+      "importance": 1,
+      "synonyms": {
+        "en": [
+          "give information about"
+        ]
+      }
     }
   ],
   "flow": {
-    "triggers": [
-    ]
+    "triggers": []
   }
 }
