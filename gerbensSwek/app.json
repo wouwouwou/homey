@@ -1,0 +1,41 @@
+{
+  "id": "nl.gerbenmeijer.random",
+  "version": "1.3.3.7",
+  "name": {
+    "en": "Gerbens Test",
+    "nl": "Gerbens Test"
+  },
+  "description": {
+    "en": "This does random stuff",
+    "nl": "MAASKANTJE KUT!"
+  },
+  "author": {
+    "name": "Gerben Meijer",
+    "email": "gerry2211@gmail.com"
+  },
+  "dependencies": {},
+  "permissions": [
+    "homey:manager:speech-output"
+  ],
+  "speech": [
+    {
+      "id": "generated6",
+      "importance": "1",
+      "synonyms": {
+        "en": [
+          "roll a d6"
+        ]
+      }
+    }
+  ],
+  "flow": {
+    "triggers": [
+      {
+        "method": "generated6",
+        "title": {
+          "en": "generated6"
+        }
+      }
+    ]
+  }
+}
